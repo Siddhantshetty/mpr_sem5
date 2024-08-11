@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Onion.jpg" type="image/x-icon">
+  <title>FreshFields Market</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="homepage">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.jpg" alt="logo" width="70" height="50">
+      </div>
+      <div class="nav-links">
+        <a href="#section1">|About|</a>
+        <a href="#section2">|Our Services|</a>
+        <a href="#section3">|Contact Us|</a>
+        <a href="#section4">|Our Products|</a>
+      </div>
+    </nav>
+    </nav>
+    <h1>FRESH FIELDS MARKET</h1>
+    <marquee behavior="alternate" direction="left">
+      <h3><tt><b>Welcome to Fresh Fields Market, Contact us on (sms/Call/whatsApp)+91 9653631147</b></tt></h3>
+    </marquee>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">1 of 6</div>
+          <img src="images/delivery.jpg" style="width:100%">
+          <div class="caption">Fresh Home Delivery of Fruits & Vegetables</div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">2 of 6</div>
+          <img src="images/capsicum.webp" style="width:100%">
+          <div class="caption">Capsicum</div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">3 of 6</div>
+          <img src="images/Cucumbers.jpg" style="width:100%">
+          <div class="caption">Cucumbers </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">4 of 6</div>
+          <img src="images/Tomatoes.jpg" style="width:100%">
+          <div class="caption">Tomatoes </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">5 of 6</div>
+          <img src="images/Watermelons.jpg" style="width:100%">
+          <div class="caption">Watermelons</div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="slide">
+          <div class="numbertext">6 of 6</div>
+          <img src="images/Onion.jpg" style="width:100%">
+          <div class="caption">Onions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+  <div class="card-groups">
+    <div class="card-group">
+      <div class="card">
+        <div class="container">
+          <h2><b>Onions</b></h2>
+          <img src="images/Onion.jpg" alt="onions" style="width:150%">
+          <p>Fresh Onions</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <h2><b>Cucumbers</b></h2>
+          <img src="images/Cucumbers.jpg" alt="cucumbers" style="width:150%">
+          <p>Produce, Sell and delivery of Cucumbers.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <h2><b>Tomatoes </b></h2>
+          <img src="images/Tomatoes.jpg" alt="tomatoes" style="width:120%">
+          <p>Wide variety of fresh tomatoes </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-groups">
+    <div class="card-group">
+      <div class="card">
+        <div class="container">
+          <h2><b>Watermelons</b></h2>
+          <img src="images/Watermelons.jpg" alt="onions" style="width:100%">
+          <p>Fresh Nutritious Watermelons</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <h2><b>Capsicum</b></h2>
+          <img src="images/capsicum.webp" alt="cucumbers" style="width:100%">
+          <p>Produce, Sell and delivery of Capsicums.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="container">
+          <h2><b>French Beans</b></h2>
+          <img src="images/frenchbean.jpg" alt="frenchbean" style="width:60%">
+          <p>Fresh french beans from our farms.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- Content goes here -->
+
+    <h1 id="section1">ABOUT FreshFields Market</h1>
+    <p style="font-size:x-large;">Welcome to FreshFields Market Produce<br>
+      FreshFields Market is based in the city of Mumbai - India.<br>
+      Our aim is to provide nutritious, fresh, and safe products from our farms to our clients.
+    </p>
+  </div>
+  <section>
+    <div class="beige">
+      <h2 id="section2">OUR SERVICES?</h2>
+    </div>
+    <div class="flex-container">
+      <div class="flex-item"><img src="images/greehouse construction.jpg" alt="Mission" style="width:100%">
+        <P><b>Direct Home Delivery of Fruits and Vegetables</b></P>
+        <p>Directly procuring from the farmer to the consumers</p>
+      </div>
+      <div class="flex-item"><img src="images/dripirrigation.jpg" alt="administrator" style="width:100%">
+        <p><b>Agronomic Support</b></p>
+        <p>Drip irrigation</p>
+      </div>
+      <div class="flex-item"><img src="images/vegetable seedlings.png" alt="cleophas" style="width:100%">
+        <P><b>100% Organic Produce</b></P>
+        <p>Ensuring the produce is grown naturally </p>
+      </div>
+    </div>
+  </section>
+  <div class="float-container">
+    <div class="float-child">
+      <div class="beige">
+        <h2 id="section2">OUR SERVICES?</h2>
+      </div>
+      <ul>
+        <li>Direct Home Delivery of Fruits and Vegetables</li>
+        <li>Agronomic Support</li>
+        <li>100% Organic Produce</li>
+        <li>24*7 Support</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="center">
+    <img id="myImage" src="images/logo.jpg" alt="Blinking Image" width="300" height="200">
+  </div>
+  <span id="myWord"><b>WELCOME ONCE AGAIN, FEEL FREE TO ENGAGE US. THANK YOU.</b></span>
+  <script src="slide.js"></script>
+</body>
+<span>
+  <p><b>
+      <h1 id="section3">CONTACT US:</h1>
+    </b><br>
+  <p><a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpeg" alt="facebook" width="50"
+        height="50"></a>
+    <a href="tel:+254791600856p000" target="_blank"><img src="images/Cell.png" alt="cell phone" width="50"
+        height="50"></a>
+    <a href="https://wa.me/+91 9653631148" target="_blank"><img src="images/whatsapp.jpeg" alt="whatsApp" width="100"
+        height="50"></a>
+    <a href="mailto:grandroyce.com" target="_blank"><img src="images/mail.png" alt="linked in" width="70"
+        height="50"></a>
+  </p>
+</span>
+<p><a href="#top">Go to Top</a></p>
+<br>
+<footer>
+  FreshFields Market.<br>
+  Tel; +91 9653631147<br>
+  Located In Bandra, Mumbai - Maharashtra, India<br>
+  <p>copyright © 2024.All rights reserved.<br>
+    Designed,Developed and Maintained by Group no 28.(+254708579885) <br>
+    V.0.0.1<br></p>
+</footer>
+
+</html>
